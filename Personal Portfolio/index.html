@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/loggo.jpg" class="logo" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#offerings">Offerings</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>W E B__D E V E L O P E R</p><br>
+        <h1>Hi, I'm <span>Muhamed Amreen Sadica S</span>, From Chennai, India</span></h1>
+        
+
+      </div>
+    </div>
+  </div>
+ 
+  <!---------------this is about section  -------------------->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Sadica.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hello, I'm a dedicated B.E Computer Science and Engineering student with a passion for 
+            technology and innovation. <br>I'm always eager to learn and stay updated with latest advancement in the field. <br>
+            I'm passionate about coding and problem-solving, and i believe my academic
+            background equips me well for this dynamic field.I look forward to mastering
+            web technologies that make a positive impact. 
+          </p> <br>
+          <div class="tab-titles">
+            <div class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </div>
+            <div class="tab-links" onclick="opentab('experience')">
+              Experience
+            </div>
+            <div class="tab-links" onclick="opentab('education')">
+              Education
+            </div>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              
+              <li><span>Web Development</span><br /><ul>Web Applications</ul></li>
+                 </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2023</span><br />Code Chef</li>
+              <li><span>2023</span><br />Websites</li>
+              <li><span>2023</span><br />GitHub</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br />Udemy</li>
+              <li><span>2023</span><br />Great Learning</li>
+              <li><span>2023</span><br />GeeksforGeeks </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------offerings------------------------->
+  <div id="offerings">
+    <div class="container">
+      <h1 class="sub-title">My Offerings</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>WEB DEV</h2>
+          <p>
+            As a  Web Designer, my services involves creating, building, and maintaining websites and web applications.
+            Development like front-end and back-end Full stack etc.  
+          </p>
+        </div>
+        
+        </div>
+    </div>
+  </div>
+  <!-- ------------------Portfolio-------------------------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Activities</h1>
+      <div class="services-list">
+        <div>
+          <h2>Fake news detection using Python</h2>
+          <p>
+            Fake News Detection Project in Python employs natural language processing and machine learning techniques
+to identify and flag misinformation and deceptive content in news articles.
+          </p>
+        </div>
+        <div>
+          <h2>Fake product detection using blockchain</h2>
+          <p>
+            I designed a fake product detection website homepage with HTML and CSS, crafting a user-friendly interface for seamless streaming.
+            Engaging visuals and intuitive navigation enhance the viewing experience.
+          </p>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------Contact----------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fab fa-paper-plane"></i>amreensadica18@gmail.com</p>
+          <p><i class="fab fa-phone-square-alt"></i>9500XXXX94</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/deepak.dhali.1622" target="_blank"> <i
+                class="fab fa-facebook"></i></a>
+            
+            <a href="https://www.instagram.com/__voldemort16/" target="_blank"> <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/deepak-dhali-226382277/" target="_blank"> <i
+                class="fab fa-linkedin"></i></a>
+          
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Mrssage" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+
+</html>
+<!------end of the code------>
